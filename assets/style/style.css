@@ -1,0 +1,67 @@
+body {
+    background-image: url("../img/background.png");
+}
+
+main {
+    background-color: white;
+    position: relative;
+    margin: 60px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.contenitor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 10px 50px;
+    position: relative;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table {
+    padding: 10px 50px;
+}
+
+th, td {
+    border-top: 1px solid rgb(194, 189, 189);
+    border-width: thin;
+    text-align: left;
+    height: 30px;
+}
+
+.bolder {
+    border-top: 2px solid rgb(194,189,189);
+}
+
+.elimina, .modifica {
+    text-align: right;
+}
+
+.modifica {
+    margin-left: 0px;
+}
+
+.figure {
+    float: left;
+    padding: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    box-sizing: border-box;
+}
+
+.button {
+    margin-left: 310px;
+}
+
+.stemma {
+    float: left;
+    margin: 0px;
+    padding: 5px;
+}
