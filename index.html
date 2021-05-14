@@ -1,10 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="it">
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
-</html>
+    <title>Eccellenza Calabrese</title>
+    <link href="assets/img/calabria.png" rel="icon" type="img/png" />
+    <link href="assets/style/font.css" rel="stylesheet" type="text/css" />
+    <link href="assets/style/style.css" rel="stylesheet" type="text/css" />
+    <base href="http://127.0.0.1:5500/" />
+</head>
+<body>
+    <main class="main">
+            <header>
+                <div class="contenitor">
+                    <figure class="figure">
+                    <img src="assets/img/calabria.png" alt="Calabria" height="28px" width="28px"/>
+                    </figure>
+                    <h1 class="title">Eccellenza Calabrese 2021</h1>
+                    <div class="button">
+                        <input class="filtrasquadre" type="search" placeholder="Filtra squadre" />
+                        <a class="creasquadra" href="views/create.html">Crea squadra</a>
+                    </div>
+                </div>
+            </header>
+            <section class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Squadra</th>
+                        <th>Punti</th>
+                        <th>D/R</th>
+                        <th colspan="2">Città</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="bolder">
+                        <td class="number">1</td>
+                        <td>
+                            <figure class="stemma">
+                                <img src="assets/img/Sersale.png" alt="Sersale" height="28px" width="20px"/>
+                            </figure>
+                            <p>Sersale</p>
+                        </td>
+                        <td>8</td>
+                        <td>3</td>
+                        <td>Sersale</td>
+                        <td class="elimina modifica">
+                            <button class="bottone1">Elimina</button>
+                            <a class="bottone2" href="views/edit.html">Modifica</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="number">2</td>
+                        <td>
+                            <figure class="stemma">
+                                <img src="assets/img/Reggiomediterranea.png" alt="Reggiomediterranea" height="28px" width="28px" />
+                            </figure>
+                            <p>Reggiomediterranea</p>
+                        </td>
+                        <td>7</td>
+                        <td>3</td>
+                        <td>Reggio Calabria</td>
+                        <td class="elimina modifica">
+                            <button class="bottone1">Elimina</button>
+                            <a class="bottone2" href="views/edit.html">Modifica</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="number">3</td>
+                        <td>
+                            <figure class="stemma">
+                                <img src="assets/img/Vigor.png" alt="Vigorlamezia" height="28px" width="20px" />
+                            </figure>
+                            <p>Vigor Lamezia</p>
+                        </td>
+                        <td>7</td>
+                        <td>3</td>
+                        <td>Lamezia Terme</td>
+                        <td class="elimina modifica">
+                            <button class="bottone1">Elimina</button>
+                            <a class="bottone2" href="views/edit.html">Modifica</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="number">4</td>
+                        <td>
+                            <figure class="stemma">
+                                <img src="assets/img/Sambiase.png" alt="Sambiase" height="28px" width="20px" />
+                            </figure>
+                            <p>Sambiase Lamezia</p>
+                        </td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>Lamezia Terme</td>
+                        <td class="elimina modifica">
+                            <button class="bottone1">Elimina</button>
+                            <a class="bottone2" href="views/edit.html">Modifica</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="number">5</td>
+                        <td>
+                            <figure class="stemma">
+                                <img src="assets/img/Locri.png" alt="Locri" height="28px" width="20px" />
+                            </figure>
+                            <p>Locri</p>
+                        </td>
+                        <td>5</td>
+                        <td>-1</td>
+                        <td>Locri</td>
+                        <td class="elimina modifica">
+                            <button class="bottone1">Elimina</button>
+                            <a class="bottone2" href="views/edit.html">Modifica</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="number">6</td>
+                        <td>
+                            <figure class="stemma">
+                                <img src="assets/img/Scalea.png" alt="Scalea" height="28px" width="20px" />
+                            </figure>
+                            <p>Scalea</p>
+                        </td>
+                        <td>5</td>
+                        <td>-3</td>
+                        <td>Scalea</td>
+                        <td class="elimina modifica">
+                            <button class="bottone1">Elimina</button>
+                            <a class="bottone2" href="views/edit.html">Modifica</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="number">7</td>
+                        <td>
+                            <figure class="stemma">
+                                <img src="assets/img/Palmese.png" alt="Palmese" height="28px" width="20px" />
+                            </figure>
+                            <p>Palmese</p>
+                        </td>
+                        <td>4</td>
+                        <td>-1</td>
+                        <td>Palmese</td>
+                        <td class="elimina modifica">
+                            <button class="bottone1">Elimina</button>
+                            <a class="bottone2" href="views/edit.html">Modifica</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="number">8</td>
+                        <td>
+                            <figure class="stemma">
+                                <img src="assets/img/Soriano.png" alt="Soriano" height="28px" width="20px" />
+                            </figure>
+                            <p>Soriano</p>
+                        </td>
+                        <td>0</td>
+                        <td>-8</td>
+                        <td>Soriano</td>
+                        <td class="elimina modifica">
+                            <button class="bottone1">Elimina</button>
+                            <a class="bottone2" href="views/edit.html">Modifica</a>
+                        </td>
+                    </tr>
+                </tbody>
+                </table>
+                </section>
+        </main>   
+    </body>
+    </html>
