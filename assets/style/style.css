@@ -99,4 +99,8 @@ th, td {
     color: #721c24;
   }
   
-  
+  .alert-success{
+    border: 1px solid #c3e6cb;
+    background-color: #d4edda;
+    color: #155724;
+  }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,31 +11,36 @@
     <link href="assets/style/style.css" rel="stylesheet" type="text/css" />
     <base href="http://127.0.0.1:5500/" />
 </head>
+
 <body>
     <main class="main">
         <div class="alert alert-error dismissable-alert">
             <div>
-              <h4>Attenzione ci sono errori!</h4>
-              <ul>
-                <li>Il nome è obbligotorio</li>
-                <li>I punti sono obbligatori</li>
-              </ul>
+                <h4>Attenzione ci sono errori!</h4>
+                <ul>
+                    <li>Il nome è obbligotorio</li>
+                    <li>I punti sono obbligatori</li>
+                </ul>
             </div>
             <i class="fa fa-times"></i>
-            </div>
-            <header>
-                <div class="contenitor">
-                    <figure class="figure">
-                    <img src="assets/img/calabria.png" alt="Calabria" height="28px" width="28px"/>
-                    </figure>
-                    <h1 class="title">Eccellenza Calabrese 2021</h1>
-                    <div class="button">
-                        <input class="filtrasquadre" type="search" placeholder="Filtra squadre" />
-                        <a class="creasquadra" href="views/create.html">Crea squadra</a>
-                    </div>
+        </div>
+        <div class="alert alert-success dismissable-alert">
+            <span>Hai modificato con successo una squadra Alert</span>
+            <i class="fa fa-times"></i>
+        </div>
+        <header>
+            <div class="contenitor">
+                <figure class="figure">
+                    <img src="assets/img/calabria.png" alt="Calabria" height="28px" width="28px" />
+                </figure>
+                <h1 class="title">Eccellenza Calabrese 2021</h1>
+                <div class="button">
+                    <input class="filtrasquadre" type="search" placeholder="Filtra squadre" />
+                    <a class="creasquadra" href="views/create.html">Crea squadra</a>
                 </div>
-            </header>
-            <section class="table">
+            </div>
+        </header>
+        <section class="table">
             <table>
                 <thead>
                     <tr>
@@ -50,7 +56,7 @@
                         <td class="number">1</td>
                         <td>
                             <figure class="stemma">
-                                <img src="assets/img/Sersale.png" alt="Sersale" height="28px" width="20px"/>
+                                <img src="assets/img/Sersale.png" alt="Sersale" height="28px" width="20px" />
                             </figure>
                             <p>Sersale</p>
                         </td>
@@ -66,7 +72,8 @@
                         <td class="number">2</td>
                         <td>
                             <figure class="stemma">
-                                <img src="assets/img/Reggiomediterranea.png" alt="Reggiomediterranea" height="28px" width="28px" />
+                                <img src="assets/img/Reggiomediterranea.png" alt="Reggiomediterranea" height="28px"
+                                    width="28px" />
                             </figure>
                             <p>Reggiomediterranea</p>
                         </td>
@@ -175,8 +182,9 @@
                         </td>
                     </tr>
                 </tbody>
-                </table>
-                </section>
-        </main>   
-    </body>
-    </html>
+            </table>
+        </section>
+    </main>
+</body>
+
+</html>
