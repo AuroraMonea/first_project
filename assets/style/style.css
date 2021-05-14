@@ -84,6 +84,9 @@ th, td {
   .alert h4{
     margin-bottom: 15px;
   }
+  .alert li {  
+   list-style: square inside;
+  }
   
   .alert .fa.fa-times {
     cursor: pointer;
