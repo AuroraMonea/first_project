@@ -1,3 +1,7 @@
+.clickable {
+  cursor: pointer;
+}
+
 body {
     background-image: url("../img/background.png");
 }
@@ -65,3 +69,34 @@ th, td {
     margin: 0px;
     padding: 5px;
 }
+
+
+/*ALERTS*/
+.alert{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 15px;
+    border-radius: 5px;
+    font-family: sans-serif;
+    margin: 10px;
+  }
+  
+  .alert h4{
+    margin-bottom: 15px;
+  }
+  
+  .alert .fa.fa-times {
+    cursor: pointer;
+    color: none;
+  }
+  .alert.dismissable-alert .fa.fa-times{
+    display: inline-block;
+  }
+  
+  .alert-error{
+    border: 1px solid #f5c6cb;
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
+  
