@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modifica squadra</title>
+    <base href="http://127.0.0.1:5500/" />
+    <link href="../assets/style/style_form.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <main>
+        <header>
+            <div class="contenitor">
+               <h1 class="title">Modifica squadra</h1> 
+               <a class="indietro" href="../index.html">Indietro</a>
+            </div>
+        </header>
+        <hr />
+       <div class="form">
+           <form action="" method="GET" enctype="multipart/form-data">
+                <div class="attachment">
+                    <label for="attachment">Scudetto</label>
+                    <input id="attachment" name="attachment" type="file" placeholder="Scegli un'immagine o trascinala qui..."/> 
+                </div>
+                <div class="datisquadra">
+                <div class="name">
+                    <label class="d-block" for="name">Nome Squadra:</label>
+                    <input id="name" type="text" name="name" placeholder="Sersale" />
+                </div>
+                <div class="city">
+                    <label class="d-block" for="city">Città squadra:</label>
+                    <input id="city" type="text" name="city" placeholder="Sersale" />
+                </div>
+                </div>
+                <div class="punteggio">
+                <div class="points">
+                    <label class="d-block" for="points">Punti:</label>
+                    <input id="points" type="number" name="points" placeholder="8"/>
+                </div>
+                <div class="differenzareti">
+                    <label class="d-block" for="differenzareti">Differenza reti:</label>
+                    <input id="differenzareti" type="number" name="differenzareti" placeholder="3"/>
+                </div>
+                </div>
+                <div class="submit">
+                    <button class="button">Submit</button>
+                </div>
+           </form>
+       </div> 
+    </main>
+    
+</body>
+</html>
