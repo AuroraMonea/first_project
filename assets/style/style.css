@@ -10,7 +10,7 @@ main {
     background-color: white;
     position: relative;
     margin: 60px;
-    padding-bottom: 20px;
+    padding: 20px;
     box-sizing: border-box;
     border-radius: 15px;
 }
@@ -90,7 +90,7 @@ th, td {
 
   .alert .fa.fa-times {
     cursor: pointer;
-    color: none;
+        display: none;
   }
   .alert.dismissable-alert .fa.fa-times{
     display: inline-block;
