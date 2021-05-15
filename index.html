@@ -1,196 +1,221 @@
 <!DOCTYPE html>
 <html lang="it">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eccellenza Calabrese</title>
     <link href="assets/img/calabria.png" rel="icon" type="img/png" />
     <link href="assets/style/font.css" rel="stylesheet" type="text/css" />
-    <script src="https://kit.fontawesome.com/5375fb1890.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/5375fb1890.js"
+      crossorigin="anonymous"
+    ></script>
     <link href="assets/style/style.css" rel="stylesheet" type="text/css" />
     <base href="http://127.0.0.1:5500/" />
-</head>
+  </head>
 
-<body>
+  <body>
     <main class="main">
-        <div class="alert alert-error dismissable-alert">
-            <div>
-                <h4>Attenzione ci sono errori!</h4>
-                <ul>
-                    <li>Il nome è obbligotorio</li>
-                    <li>I punti sono obbligatori</li>
-                </ul>
-            </div>
-            <i class="fa fa-times"></i>
+      <div class="alert alert-error dismissable-alert">
+        <div>
+          <h4>Attenzione ci sono errori!</h4>
+          <ul>
+            <li>Il nome è obbligotorio</li>
+            <li>I punti sono obbligatori</li>
+          </ul>
         </div>
-        <div class="alert alert-success dismissable-alert">
-            <span>Hai modificato con successo una squadra Alert</span>
-            <i class="fa fa-times"></i>
-        </div>
-        <div class="alert alert-info ">
-            <span>Non ci sono squadre</span>
-            <i class="fa fa-times"></i>
-        </div>
+        <i class="fa fa-times"></i>
+      </div>
+      <div class="alert alert-success dismissable-alert">
+        <span>Hai modificato con successo una squadra Alert</span>
+        <i class="fa fa-times"></i>
+      </div>
+      <div class="alert alert-info">
+        <span>Non ci sono squadre</span>
+        <i class="fa fa-times"></i>
+      </div>
 
-        <header>
-            <div class="contenitor">
-                <figure class="figure">
-                    <img src="assets/img/calabria.png" alt="Calabria" height="28px" width="28px" />
-                </figure>
-                <h1 class="title">Eccellenza Calabrese 2021</h1>
-                <div class="button">
-                    <input class="filtrasquadre" type="search" placeholder="Filtra squadre" />
-                    <a class="creasquadra" href="views/create.html">Crea squadra</a>
+      <header class="main-header">
+        <div class="left-col">
+          <figure>
+            <img
+              src="assets/img/calabria.png"
+              alt="Calabria"
+              width="50"
+              height="50"
+            />
+          </figure>
+          <h1 class="title">Eccellenza Calabrese 2021</h1>
+        </div>
+        <div class="right-col">
+          <input type="search" placeholder="Filtra squadre" />
+          <a class="btn btn-success" href="views/create.html">Crea squadra</a>
+        </div>
+      </header>
+      <section class="table">
+        <table class="teams-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Squadra</th>
+              <th>Punti</th>
+              <th>D/R</th>
+              <th>Città</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="col">1</th>
+              <td>
+                <div class="team-name">
+                  <figure class="stemma">
+                    <img src="assets/img/Sersale.png" alt="Sersale" />
+                  </figure>
+                  <p>Sersale</p>
                 </div>
-            </div>
-        </header>
-        <section class="table">
-            <table>
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Squadra</th>
-                        <th>Punti</th>
-                        <th>D/R</th>
-                        <th colspan="2">Città</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="bolder">
-                        <td class="number">1</td>
-                        <td>
-                            <figure class="stemma">
-                                <img src="assets/img/Sersale.png" alt="Sersale" height="28px" width="20px" />
-                            </figure>
-                            <p>Sersale</p>
-                        </td>
-                        <td>8</td>
-                        <td>3</td>
-                        <td>Sersale</td>
-                        <td class="elimina modifica">
-                            <button class="bottone1">Elimina</button>
-                            <a class="bottone2" href="views/edit.html">Modifica</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="number">2</td>
-                        <td>
-                            <figure class="stemma">
-                                <img src="assets/img/Reggiomediterranea.png" alt="Reggiomediterranea" height="28px"
-                                    width="28px" />
-                            </figure>
-                            <p>Reggiomediterranea</p>
-                        </td>
-                        <td>7</td>
-                        <td>3</td>
-                        <td>Reggio Calabria</td>
-                        <td class="elimina modifica">
-                            <button class="bottone1">Elimina</button>
-                            <a class="bottone2" href="views/edit.html">Modifica</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="number">3</td>
-                        <td>
-                            <figure class="stemma">
-                                <img src="assets/img/Vigor.png" alt="Vigorlamezia" height="28px" width="20px" />
-                            </figure>
-                            <p>Vigor Lamezia</p>
-                        </td>
-                        <td>7</td>
-                        <td>3</td>
-                        <td>Lamezia Terme</td>
-                        <td class="elimina modifica">
-                            <button class="bottone1">Elimina</button>
-                            <a class="bottone2" href="views/edit.html">Modifica</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="number">4</td>
-                        <td>
-                            <figure class="stemma">
-                                <img src="assets/img/Sambiase.png" alt="Sambiase" height="28px" width="20px" />
-                            </figure>
-                            <p>Sambiase Lamezia</p>
-                        </td>
-                        <td>6</td>
-                        <td>2</td>
-                        <td>Lamezia Terme</td>
-                        <td class="elimina modifica">
-                            <button class="bottone1">Elimina</button>
-                            <a class="bottone2" href="views/edit.html">Modifica</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="number">5</td>
-                        <td>
-                            <figure class="stemma">
-                                <img src="assets/img/Locri.png" alt="Locri" height="28px" width="20px" />
-                            </figure>
-                            <p>Locri</p>
-                        </td>
-                        <td>5</td>
-                        <td>-1</td>
-                        <td>Locri</td>
-                        <td class="elimina modifica">
-                            <button class="bottone1">Elimina</button>
-                            <a class="bottone2" href="views/edit.html">Modifica</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="number">6</td>
-                        <td>
-                            <figure class="stemma">
-                                <img src="assets/img/Scalea.png" alt="Scalea" height="28px" width="20px" />
-                            </figure>
-                            <p>Scalea</p>
-                        </td>
-                        <td>5</td>
-                        <td>-3</td>
-                        <td>Scalea</td>
-                        <td class="elimina modifica">
-                            <button class="bottone1">Elimina</button>
-                            <a class="bottone2" href="views/edit.html">Modifica</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="number">7</td>
-                        <td>
-                            <figure class="stemma">
-                                <img src="assets/img/Palmese.png" alt="Palmese" height="28px" width="20px" />
-                            </figure>
-                            <p>Palmese</p>
-                        </td>
-                        <td>4</td>
-                        <td>-1</td>
-                        <td>Palmese</td>
-                        <td class="elimina modifica">
-                            <button class="bottone1">Elimina</button>
-                            <a class="bottone2" href="views/edit.html">Modifica</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="number">8</td>
-                        <td>
-                            <figure class="stemma">
-                                <img src="assets/img/Soriano.png" alt="Soriano" height="28px" width="20px" />
-                            </figure>
-                            <p>Soriano</p>
-                        </td>
-                        <td>0</td>
-                        <td>-8</td>
-                        <td>Soriano</td>
-                        <td class="elimina modifica">
-                            <button class="bottone1">Elimina</button>
-                            <a class="bottone2" href="views/edit.html">Modifica</a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+              </td>
+              <td>8</td>
+              <td>3</td>
+              <td>Sersale</td>
+              <td class="elimina modifica">
+                <button class="btn btn-danger">Elimina</button>
+                <a class="btn" href="views/edit.html">Modifica</a>
+              </td>
+            </tr>
+            <tr>
+              <th scope="col">2</th>
+              <td>
+                <div class="team-name">
+                  <figure class="stemma">
+                    <img
+                      src="assets/img/Reggiomediterranea.png"
+                      alt="Reggiomediterranea"
+                    />
+                  </figure>
+                  <p>Reggiomediterranea</p>
+                </div>
+              </td>
+              <td>7</td>
+              <td>3</td>
+              <td>Reggio Calabria</td>
+              <td class="elimina modifica">
+                <button class="btn btn-danger">Elimina</button>
+                <a class="btn" href="views/edit.html">Modifica</a>
+              </td>
+            </tr>
+            <tr>
+              <th scope="col">3</th>
+              <td>
+                <div class="team-name">
+                  <figure class="stemma">
+                    <img src="assets/img/Vigor.png" alt="Vigorlamezia" />
+                  </figure>
+                  <p>Vigor Lamezia</p>
+                </div>
+              </td>
+              <td>7</td>
+              <td>3</td>
+              <td>Lamezia Terme</td>
+              <td class="elimina modifica">
+                <button class="btn btn-danger">Elimina</button>
+                <a class="btn" href="views/edit.html">Modifica</a>
+              </td>
+            </tr>
+            <tr>
+              <th scope="col">4</th>
+              <td>
+                <div class="team-name">
+                  <figure class="stemma">
+                    <img src="assets/img/Sambiase.png" alt="Sambiase" />
+                  </figure>
+                  <p>Sambiase Lamezia</p>
+                </div>
+              </td>
+              <td>6</td>
+              <td>2</td>
+              <td>Lamezia Terme</td>
+              <td class="elimina modifica">
+                <button class="btn btn-danger">Elimina</button>
+                <a class="btn" href="views/edit.html">Modifica</a>
+              </td>
+            </tr>
+            <tr>
+              <th scope="col">5</th>
+              <td>
+                <div class="team-name">
+                  <figure class="stemma">
+                    <img src="assets/img/Locri.png" alt="Locri" />
+                  </figure>
+                  <p>Locri</p>
+                </div>
+              </td>
+              <td>5</td>
+              <td>-1</td>
+              <td>Locri</td>
+              <td class="elimina modifica">
+                <button class="btn btn-danger">Elimina</button>
+                <a class="btn" href="views/edit.html">Modifica</a>
+              </td>
+            </tr>
+            <tr>
+              <th scope="col">6</th>
+              <td>
+                <div class="team-name">
+                  <figure class="stemma">
+                    <img src="assets/img/Scalea.png" alt="Scalea" />
+                  </figure>
+                  <p>Scalea</p>
+                </div>
+              </td>
+              <td>5</td>
+              <td>-3</td>
+              <td>Scalea</td>
+              <td class="elimina modifica">
+                <button class="btn btn-danger">Elimina</button>
+                <a class="btn" href="views/edit.html">Modifica</a>
+              </td>
+            </tr>
+            <tr>
+              <th scope="col">7</th>
+              <td>
+                <div class="team-name">
+                  <figure class="stemma">
+                    <img src="assets/img/Palmese.png" alt="Palmese" />
+                  </figure>
+                  <p>Palmese</p>
+                </div>
+              </td>
+              <td>4</td>
+              <td>-1</td>
+              <td>Palmese</td>
+              <td class="elimina modifica">
+                <button class="btn btn-danger">Elimina</button>
+                <a class="btn" href="views/edit.html">Modifica</a>
+              </td>
+            </tr>
+            <tr>
+              <th scope="col">8</th>
+              <td>
+                <div class="team-name">
+                  <figure class="stemma">
+                    <img src="assets/img/Soriano.png" alt="Soriano" />
+                  </figure>
+                  <p>Soriano</p>
+                </div>
+              </td>
+              <td>0</td>
+              <td>-8</td>
+              <td>Soriano</td>
+              <td class="elimina modifica">
+                <button class="btn btn-danger">Elimina</button>
+                <a class="btn" href="views/edit.html">Modifica</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </main>
-</body>
-
+  </body>
 </html>

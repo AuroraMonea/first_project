@@ -1,102 +1,103 @@
+* {
+  box-sizing: border-box;
+}
 body {
-    background-image: url("../img/background.png");
+  background-image: url('../img/background.png');
 }
 
 main {
-    background-color: white;
-    position: relative;
-    margin: 60px;
-    padding-bottom: 20px;
-    box-sizing: border-box;
-    border-radius: 15px;
+  background-color: white;
+  position: relative;
+  margin: 60px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  border-radius: 15px;
 }
 
 * {
-    font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 16px;
+  font-family: apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-size: 16px;
 }
 
 h1 {
-    font-size: 30px;
-    font-weight: normal;
-    text-align: left;
+  font-size: 30px;
+  font-weight: normal;
+  text-align: left;
 }
 
 .contenitor {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 50px 0px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 50px 0px 50px;
 }
 
 hr {
-    border-top: 1px solid black;
-    margin: 10px 50px;
-    box-sizing: border-box;
+  border-top: 1px solid black;
+  margin: 10px 50px;
+  box-sizing: border-box;
 }
 
 .form {
-    padding: 10px 50px;
+  padding: 10px 50px;
 }
 
 .indietro {
-    background-color: #6c757d;
-    color: white;
-    text-decoration: none;
-    border: 1px solid #6c757d;
-    border-radius: 2px;
-    padding: 5px 10px;
-    margin: 5px;
+  background-color: #6c757d;
+  color: white;
+  text-decoration: none;
+  border: 1px solid #6c757d;
+  border-radius: 2px;
+  padding: 5px 10px;
+  margin: 5px;
 }
 
 .form {
-    margin: 10px 50px;
-    padding: 5px 10px;
+  margin: 10px 50px;
+  padding: 5px 10px;
 }
 
-.datisquadra, .punteggio {
-    display: flex;
-    justify-content: flex-start;
-    margin: 10px 0px;
+.d-flex {
+  display: flex;
+}
+
+.d-flex.col-2 > div {
+  flex-grow: 1;
 }
 
 #attachment {
-    border: 1px solid rgb(194, 189, 189);
-    width: auto;
-    padding: 5px 10px;
-    border-radius: 5px;
+  border: 1px solid rgb(194, 189, 189);
+  width: auto;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
-
-#name, #city, #points, #differenzareti {
-    border: 1px solid rgb(194, 189, 189);
-    width: auto;
-    padding: 5px 10px;
-    border-radius: 2px;
-    margin: 5px 0px;
-}
-
-#name {
-    margin-right: 250px;
-}
-
-#points {
-    margin-right: 250px;
+#name,
+#city,
+#points,
+#differenzareti {
+  border: 1px solid rgb(194, 189, 189);
+  width: 98%;
+  padding: 5px 10px;
+  border-radius: 2px;
+  margin: 5px 0px;
 }
 
 .d-block {
-    display: block;
+  display: block;
 }
 
 .submit {
-    text-align: right;
+  text-align: right;
 }
 
 .button {
-    border: 1px solid rgb(36, 108, 241);
-    background-color: rgb(36, 108, 241);
-    color: white;
-    padding: 5px 10px;
-    border-radius: 2px;
-    font-size: 14px;
+  border: 1px solid rgb(36, 108, 241);
+  background-color: rgb(36, 108, 241);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 2px;
+  font-size: 14px;
 }
